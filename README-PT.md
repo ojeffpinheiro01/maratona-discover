@@ -4,7 +4,7 @@
 <p align="center">
   <a href="#book-sobre-o-projeto">Sobre o projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;  
   <a href="#eye-preview">Preview</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;  
-  <a href="#earth_americas-deploy">Deploy</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;  
+  <a href="#earth_americas-implantação-em-produção">Implantação em produção</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;  
   <a href="#computer-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;  
   <a href="#gear-como-contribuir">Como contribuir</a>
 </p>
@@ -19,7 +19,7 @@ Projeto desenvolvido durante a Maratona Discover, evento organizado pela Rockets
   <img src="https://user-images.githubusercontent.com/60162736/106371611-52530d80-6345-11eb-85f2-df109fc8ad9b.png" alt="dev.finance$" width="750px"><br />
 </p>
 
-# :earth_americas: Deploy
+# :earth_americas: Implantação em produção
 ### Front-end WEB: [Netlify](https://dev-finances-jeff.netlify.app)<br />
 
 
