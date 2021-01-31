@@ -31,8 +31,8 @@ Este projeto foi desenvolvido com as seguintes tecnologias:
 ---
 
 # :gear: Como contribuir
-- Fork this repository;
-- Create a branch with your feature: `git checkout -b my-feature`;
-- Commit your changes: `git commit -m 'feat: My new feature'`;
-- Push to your branch: `git push origin my-feature`.
+- Faça um fork desse repositório;
+- Crie uma branch com a sua feature: git checkout -b minha-feature;
+- Faça commit das suas alterações: git commit -m 'feat: Minha nova feature';
+- Faça push para a sua branch: git push origin minha-feature;
 ---
