@@ -22,7 +22,7 @@ Project developed during the Discover Marathon, an event organized by Rocketseat
 # :earth_americas: Deploy
 ### Front-end WEB: [Netlify](https://dev-finances-jeff.netlify.app)<br />
 
-# Technology :computer:
+# :computer: Technology
 This project was developed with the following technologies:
 - HTML;
 - CSS
