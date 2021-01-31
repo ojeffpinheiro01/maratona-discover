@@ -1,4 +1,4 @@
-## [Leia esta página em português](hhttps://github.com/ojeffpinheiro01/maratona-discover/blob/main/README-PT.md)
+## [Leia esta página em português](https://github.com/ojeffpinheiro01/maratona-discover/blob/main/README-PT.md)
 <h1 align="center">Jeffgram</h1>
   
 <p align="center">
