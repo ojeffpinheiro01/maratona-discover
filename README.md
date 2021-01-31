@@ -3,12 +3,24 @@
   
 <p align="center">
   <a href="#overview-book">Overview</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#eye-preview">Preview</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#earth_americas-deploy">Deploy</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;  
   <a href="#technology-computer">Technology</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;  
   <a href="#how-to-contribute-gear">How to contribute</a>
 </p>
 
 # Overview :book:
 Project developed during the Discover Marathon, an event organized by Rocketseat that consists of a web finance system
+
+# :eye: Preview
+## :desktop_computer: Web
+<p align="center" >
+  <img src="https://user-images.githubusercontent.com/60162736/106371610-5121e080-6345-11eb-816a-617f0691bde9.png" alt="dev.finance$" width="750px"><br />
+  <img src="https://user-images.githubusercontent.com/60162736/106371611-52530d80-6345-11eb-85f2-df109fc8ad9b.png" alt="dev.finance$" width="750px"><br />
+</p>
+
+# :earth_americas: Deploy
+### Front-end WEB: [Netlify](https://dev-finances-jeff.netlify.app)<br />
 
 # Technology :computer:
 This project was developed with the following technologies:
