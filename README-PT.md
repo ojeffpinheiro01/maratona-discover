@@ -1,4 +1,5 @@
 ## [Read this page in English](https://github.com/ojeffpinheiro01/maratona-discover)
+<h1 align="center">dev.finance:heavy_dollar_sign:</h1>
   
 <p align="center">
   <a href="#sobre-o-projeto-book">Sobre o projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
