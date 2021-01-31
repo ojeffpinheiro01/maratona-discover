@@ -33,10 +33,12 @@ Este projeto foi desenvolvido com as seguintes tecnologias:
 ---
 
 # :gear: Como contribuir
+```bash
 - Faça um fork desse repositório;
 - Crie uma branch com a sua feature: git checkout -b minha-feature;
 - Faça commit das suas alterações: git commit -m 'feat: Minha nova feature';
 - Faça push para a sua branch: git push origin minha-feature;
+```
 ---
 
 >Este projeto foi desenvolvido com ❤️ por **[@Jéferson Pinheiro](https://github.com/ojeffpinheiro01/)**, com o instrutor **[@MaykBrito](https://linkedin.com/in/maykbrito)**, durante a **[Maratona Discover](https://maratonadiscover.rocketseat.com.br/inscricao/)** da **[Rocketseat](https://www.linkedin.com/school/rocketseat/about/)** 💜. <br> 
