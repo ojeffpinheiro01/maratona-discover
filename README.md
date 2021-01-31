@@ -2,14 +2,14 @@
 <h1 align="center">dev.finance:heavy_dollar_sign:</h1>
   
 <p align="center">
-  <a href="#overview-book">Overview</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#book-overview">Overview</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#eye-preview">Preview</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#earth_americas-deploy">Deploy</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;  
-  <a href="#technology-computer">Technology</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;  
-  <a href="#how-to-contribute-gear">How to contribute</a>
+  <a href="#computer-technology">Technology</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;  
+  <a href="#gear-how-to-contribute">How to contribute</a>
 </p>
 
-# Overview :book:
+# :book: Overview
 Project developed during the Discover Marathon, an event organized by Rocketseat that consists of a web finance system
 
 # :eye: Preview
@@ -29,7 +29,7 @@ This project was developed with the following technologies:
 - Javasript
 ---
 
-# How to contribute :gear:
+# :gear: How to contribute
 - Fork this repository;
 - Create a branch with your feature: `git checkout -b my-feature`;
 - Commit your changes: `git commit -m 'feat: My new feature'`;
