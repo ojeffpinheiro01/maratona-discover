@@ -39,10 +39,6 @@ Este projeto foi desenvolvido com as seguintes tecnologias:
 - Faça commit das suas alterações: git commit -m 'feat: Minha nova feature';
 - Faça push para a sua branch: git push origin minha-feature;
 ```
----
-
->Este projeto foi desenvolvido com ❤️ por **[@Jéferson Pinheiro](https://github.com/ojeffpinheiro01/)**, com o instrutor **[@MaykBrito](https://linkedin.com/in/maykbrito)**, durante a **[Maratona Discover](https://maratonadiscover.rocketseat.com.br/inscricao/)** da **[Rocketseat](https://www.linkedin.com/school/rocketseat/about/)** 💜. <br> 
-Se te ajudou, dá ⭐, vai me ajudar também 😉
 
 ---
 # :mailbox: Contato	
@@ -57,3 +53,8 @@ Se te ajudou, dá ⭐, vai me ajudar também 😉
 <a href="https://stackoverflow.com/ojeffpinheiro" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/stackoverflow.svg" alt="maykbrito" height="30" width="40" /></a>
 <a href="https://codesandbox.io/u/ojeffoinheiro" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/codesandbox.svg" alt="maykbrito" height="30" width="40" /></a>
 </p>
+
+---
+
+>Este projeto foi desenvolvido com ❤️ por **[@Jéferson Pinheiro](https://github.com/ojeffpinheiro01/)**, com o instrutor **[@MaykBrito](https://linkedin.com/in/maykbrito)**, durante a **[Maratona Discover](https://maratonadiscover.rocketseat.com.br/inscricao/)** da **[Rocketseat](https://www.linkedin.com/school/rocketseat/about/)** 💜. <br> 
+Se te ajudou, dá ⭐, vai me ajudar também 😉
