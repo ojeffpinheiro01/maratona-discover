@@ -1,5 +1,5 @@
 ## [Leia esta página em português](https://github.com/ojeffpinheiro01/maratona-discover/blob/main/README-PT.md)
-<h1 align="center">Jeffgram</h1>
+<h1 align="center">dev.finance:heavy_dollar_sign:</h1>
   
 <p align="center">
   <a href="#overview-book">Overview</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
