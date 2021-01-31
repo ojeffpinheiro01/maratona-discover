@@ -36,10 +36,7 @@ This project was developed with the following technologies:
 - Create a branch with your feature: `git checkout -b my-feature`;
 - Commit your changes: `git commit -m 'feat: My new feature'`;
 - Push to your branch: `git push origin my-feature`.
----
-
->This project was developed with ❤️ by **[@Jéferson Pinheiro](https://github.com/ojeffpinheiro01/)**, with the instructor **[@MaykBrito](https://linkedin.com/in/maykbrito)**, during the **[Maratona Discover](https://maratonadiscover.rocketseat.com.br/inscricao/)** of **[Rocketseat](https://www.linkedin.com/school/rocketseat/about/)** 💜. <br> 
-   If it helped you, give it ⭐, it will help me too 😉 
+--- 
 
 ---
 # :mailbox: Reach me	
@@ -54,3 +51,6 @@ This project was developed with the following technologies:
 <a href="https://stackoverflow.com/ojeffpinheiro" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/stackoverflow.svg" alt="maykbrito" height="30" width="40" /></a>
 <a href="https://codesandbox.io/u/ojeffoinheiro" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/codesandbox.svg" alt="maykbrito" height="30" width="40" /></a>
 </p>
+
+>This project was developed with ❤️ by **[@Jéferson Pinheiro](https://github.com/ojeffpinheiro01/)**, with the instructor **[@MaykBrito](https://linkedin.com/in/maykbrito)**, during the **[Maratona Discover](https://maratonadiscover.rocketseat.com.br/inscricao/)** of **[Rocketseat](https://www.linkedin.com/school/rocketseat/about/)** 💜. <br> 
+   If it helped you, give it ⭐, it will help me too 😉
