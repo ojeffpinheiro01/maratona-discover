@@ -52,6 +52,7 @@ This project was developed with the following technologies:
 <a href="https://linkedin.com/in/jeferson-pinheiro" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/linkedin.svg" alt="maykbrito" height="30" width="40" /></a>
 <a href="https://stackoverflow.com/ojeffpinheiro" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/stackoverflow.svg" alt="maykbrito" height="30" width="40" /></a>
 <a href="https://codesandbox.io/u/ojeffoinheiro" target="blank"><img align="center" src="https://cdn.jsdelivr.net/npm/simple-icons@3.0.1/icons/codesandbox.svg" alt="maykbrito" height="30" width="40" /></a>
+<a href="https://app.rocketseat.com.br/me/jeferson-pinheiro-de-souza-1580117763" target="blank"><img align="center" src="https://image.flaticon.com/icons/svg/1356/1356604.svg" alt="ojeffoinheiro" height="30" width="40" /></a>
 </p>
 
 >This project was developed with ❤️ by **[@Jéferson Pinheiro](https://github.com/ojeffpinheiro01/)**, with the instructor **[@MaykBrito](https://linkedin.com/in/maykbrito)**, during the **[Maratona Discover](https://maratonadiscover.rocketseat.com.br/inscricao/)** of **[Rocketseat](https://www.linkedin.com/school/rocketseat/about/)** 💜. <br> 
