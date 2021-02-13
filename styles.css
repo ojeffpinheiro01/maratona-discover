@@ -18,7 +18,7 @@
     --dark-blue:#fff;
     --primary-text: #eee;
     --help-text: #fff;
-    --primary-color: #666b81;
+    --primary-color: #1a1919;
     --header-color: #2e4a22 ;
     --body-color:#1b1b1b;
     --income: #2aff01;
@@ -73,9 +73,7 @@ a {
     color: var(--card-color);
     text-decoration: none;
 }
-a:hover {
-    color: var(--link-hover);
-}
+a:hover { color: var(--link-hover) }
 button {
     width: 100%;
     height: 50px;
@@ -85,9 +83,11 @@ button {
     padding: 0;
     border-radius: 0.25rem;
     cursor: pointer;
+    transition: all .3s ease;
 }
 button:hover {
     background: var(--link-hover);
+    transform: scale(1.1); 
 }
 .button.new{
     display: inline-block;
@@ -192,6 +192,21 @@ header {
     border-radius: 0.25rem;
     margin-bottom: 2rem;
     color: var(--dark-blue);
+    transition: all .3s ease-in;
+}
+.card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 2px var(--gray);
+}
+
+.card img:hover {
+    animation: rotate .3s ease-in-out;
+    transform: scale(1.03);
+}
+
+@keyframes rotate {
+    0% { transform: rotate(0deg) }
+    100% { transform: rotate(360deg) }
 }
 
 .card h3 {
@@ -256,17 +271,9 @@ table td {
     padding: 1rem 2rem;
 }
 
-td.description {
-    color: var(--dark-blue);
-}
-
-td.income {
-    color: var(--income);
-}
-
-td.expense {
-    color: #E92929;
-}
+td.description { color: var(--dark-blue) }
+td.income { color: var(--income)}
+td.expense { color: #E92929 }
 
 
 /* ----- Modal ----- */
