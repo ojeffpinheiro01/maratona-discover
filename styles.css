@@ -1,15 +1,32 @@
 /* ----- Global ----- */
 :root {
     --dark-blue: #363F5F;
+    --help-text: #666b81;
     --primary-text: #fff;
     --primary-color: #fff;
     --header-color: #2D4A22;
     --body-color: #eee;
+    --income: #3dd705;
     --card-color: #49AA26;
     --table-text: #969CB3;
     --link-hover: #3DD705;
     --modal-color: #F0F2F5;
     --cancel-color: #E92929;
+}
+
+.dark-mode:root {
+    --dark-blue:#fff;
+    --primary-text: #eee;
+    --help-text: #fff;
+    --primary-color: #666b81;
+    --header-color: #2e4a22 ;
+    --body-color:#1b1b1b;
+    --income: #2aff01;
+    --card-color:#168401 ;
+    --table-text: #fff;
+    --link-hover:#3DD705 ;
+    --modal-color: #242527;
+    --cancel-color:#ff0004;
 }
 
 html {
@@ -109,7 +126,7 @@ header {
 }
 
 /* Dark mode */
-.dark-container{
+.darkContainer{
     display: flex;
     justify-content: center;
     margin-top: 1.2rem;
@@ -191,7 +208,7 @@ header {
     margin-top: 1rem;
 }
 .card.total {
-    color: var(--primary-color);
+    color: var(--primary-text);
     background: var(--card-color);
 }
 
@@ -244,7 +261,7 @@ td.description {
 }
 
 td.income {
-    color: #12A454;
+    color: var(--income);
 }
 
 td.expense {
@@ -289,11 +306,11 @@ td.expense {
     padding: 0.8rem;
     width: 100%;
 }
+.help{
+    color: var(--help-text);
+}
 .input-group {
     margin-top: 0.8rem;
-}
-.input-group small {
-    opacity: 0.4;
 }
 .input-group.actions {
     display: flex;
