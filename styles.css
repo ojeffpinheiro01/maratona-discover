@@ -1,15 +1,32 @@
 /* ----- Global ----- */
 :root {
     --dark-blue: #363F5F;
+    --help-text: #666b81;
     --primary-text: #fff;
     --primary-color: #fff;
     --header-color: #2D4A22;
     --body-color: #eee;
+    --income: #3dd705;
     --card-color: #49AA26;
     --table-text: #969CB3;
     --link-hover: #3DD705;
     --modal-color: #F0F2F5;
     --cancel-color: #E92929;
+}
+
+.dark-mode:root {
+    --dark-blue:#fff;
+    --primary-text: #eee;
+    --help-text: #fff;
+    --primary-color: #666b81;
+    --header-color: #2e4a22 ;
+    --body-color:#1b1b1b;
+    --income: #2aff01;
+    --card-color:#168401 ;
+    --table-text: #fff;
+    --link-hover:#3DD705 ;
+    --modal-color: #242527;
+    --cancel-color:#ff0004;
 }
 
 html {
@@ -108,6 +125,56 @@ header {
     font-weight: 100;
 }
 
+/* Dark mode */
+.darkContainer{
+    display: flex;
+    justify-content: center;
+    margin-top: 1.2rem;
+}
+.checkbox {
+	opacity: 0;
+	position: absolute;
+}
+
+.label {
+	background-color: #111;
+	border-radius: 50px;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 5px;
+	position: relative;
+	height: 26px;
+	width: 50px;
+	transform: scale(1.5);
+}
+
+.label .ball {
+	background-color: #fff;
+	border-radius: 50%;
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	height: 22px;
+	width: 22px;
+	transform: translateX(0px);
+	transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .label .ball {
+	transform: translateX(24px);
+}
+
+
+.fa-moon {
+	color: #f1c40f;
+}
+
+.fa-sun {
+	color: #f39c12;
+}
+
 /* ----- Balance ----- */
 #balance {
     margin-top: -8rem;
@@ -141,7 +208,7 @@ header {
     margin-top: 1rem;
 }
 .card.total {
-    color: var(--primary-color);
+    color: var(--primary-text);
     background: var(--card-color);
 }
 
@@ -194,7 +261,7 @@ td.description {
 }
 
 td.income {
-    color: #12A454;
+    color: var(--income);
 }
 
 td.expense {
@@ -239,11 +306,11 @@ td.expense {
     padding: 0.8rem;
     width: 100%;
 }
+.help{
+    color: var(--help-text);
+}
 .input-group {
     margin-top: 0.8rem;
-}
-.input-group small {
-    opacity: 0.4;
 }
 .input-group.actions {
     display: flex;

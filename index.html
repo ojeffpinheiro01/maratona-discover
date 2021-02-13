@@ -10,10 +10,22 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
       <img src="./assets//logo.svg" alt="logo dev Finance" />
+      <div class="darkContainer">
+        <input type="checkbox" class="checkbox" id="chk" onclick="DarkMode()" />
+        <label class="label" for="chk">
+          <i class="fas fa-moon"></i>
+          <i class="fas fa-sun"></i>
+          <div class="ball"></div>
+        </label>
+      </div>
     </header>
 
     <main class="container">
@@ -87,8 +99,7 @@
                 placeholder="0,00"
               />
               <small class="help"
-                >Use o sinal - (negativo) para despesas <br />
-                e , (vírgula) para casas decimais</small
+                >Use o sinal - (negativo) para despesas e , (vírgula) para casas decimais</small
               >
             </div>
             <div class="input-group">

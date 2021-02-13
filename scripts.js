@@ -12,16 +12,19 @@ transactions = [
   { description: "Website", amount: 500000, date: "29/01/2021" },
   { description: "Internet", amount: -9900, date: "29/01/2021" },
   { description: "App", amount: 200000, date: "29/01/2021" },
-]
+];
 
 const Storage = {
-  get(){
-    return JSON.parse(localStorage.getItem("dev.finances:transactions")) || []
+  get() {
+    return JSON.parse(localStorage.getItem("dev.finances:transactions")) || [];
   },
-  set(transactions){
-    localStorage.setItem("dev.finances:transactions", JSON.stringify(transactions))
-  }
-}
+  set(transactions) {
+    localStorage.setItem(
+      "dev.finances:transactions",
+      JSON.stringify(transactions)
+    );
+  },
+};
 
 const Transaction = {
   all: Storage.get(),
@@ -171,11 +174,25 @@ const Form = {
   },
 };
 
+function DarkMode() {
+  const darkSelect = document.querySelector("#chk");
+
+  const onChangeDark = () => {
+    const html = document.querySelector('html');
+    const setDarkMode = html.classList.toggle("dark-mode");
+    localStorage.setItem("dev.finances:mode", String(setDarkMode))
+  };
+  const setDarkMode = (localStorage.getItem("dev.finances:mode") || "true") === "false" ? false : true;
+  if(setDarkMode) onChangeDark()
+
+  darkSelect.addEventListener('change', onChangeDark)
+}
+
 const App = {
   init() {
     Transaction.all.forEach(DOM.addTransaction);
     DOM.updateBalance();
-    Storage.set(Transaction.all)
+    Storage.set(Transaction.all);
   },
 
   reload() {
@@ -183,5 +200,5 @@ const App = {
     App.init();
   },
 };
-
+DarkMode();
 App.init();
