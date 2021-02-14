@@ -37,6 +37,7 @@ html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    transition: transform 0.3s;
 }
 
 body {
@@ -228,6 +229,14 @@ header {
     color: var(--primary-text);
     background: var(--card-color);
 }
+
+.card.total.positive {
+    background: var(--card-color);
+  }
+  
+  .card.total.negative {
+    background: var(--cancel-color);
+  }
 
 
 

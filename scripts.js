@@ -111,9 +111,17 @@ const DOM = {
     document.getElementById('expenseDisplay').innerHTML = Utils.formatCurrency(
       Transaction.expense()
     )
-    document.getElementById('totalDisplay').innerHTML = Utils.formatCurrency(
-      Transaction.total()
-    )
+    const totalDisplay = document.getElementById('totalDisplay');
+    const cardTotal = totalDisplay.parentNode;
+    const totalBalance = Transaction.total();
+
+    cardTotal.classList.remove('positive');
+    cardTotal.classList.remove('negative');
+
+    if (totalBalance > 0) cardTotal.classList.add('positive');
+    else if (totalBalance < 0) cardTotal.classList.add('negative');
+
+    totalDisplay.innerHTML = Utils.formatCurrency(totalBalance);
   },
   clearTransactions() {
     DOM.transactionsContainer.innerHTML = '';
