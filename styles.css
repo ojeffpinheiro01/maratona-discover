@@ -276,6 +276,7 @@ table td {
 td.description { color: var(--dark-blue) }
 td.income { color: var(--income)}
 td.expense { color: #E92929 }
+td img { width: 28px }
 
 
 /* ----- Modal ----- */

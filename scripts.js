@@ -1,4 +1,10 @@
 const Modal = {
+  elements: {
+    form: document.querySelector('form'),
+    description: document.querySelector('input#description'),
+    amount: document.querySelector('input#amount'),
+    date: document.querySelector('input#date'),
+  },
   open(){
     document.querySelector('.modal-overlay').classList.add('active')
   },
@@ -15,16 +21,20 @@ transactions = [
 ];
 
 const Storage = {
+  getByIndex(index) {
+    const transactions = this.get();
+    return transactions[index];
+  },
   get(){
-    return JSON.parse(localStorage.getItem("dev.finances:transactions")) || []
+    return JSON.parse(localStorage.getItem('dev.finances:transactions')) || []
   },
   set(transactions) {
     localStorage.setItem(
-      "dev.finances:transactions",
+      'dev.finances:transactions',
       JSON.stringify(transactions)
-    );
-  },
-};
+    )
+  }
+}
 
 const Transaction = {
   all: Storage.get(),
@@ -32,9 +42,22 @@ const Transaction = {
     Transaction.all.push(transaction)
     App.reload()
   },
+  addByIndex(transaction, index) {
+    Transaction.all[index] = transaction;
+    App.reload();
+  },
   remove(index){
     Transaction.all.splice(index, 1)
     App.reload()
+  },
+  update(index){
+    const { description, amount, date } = Storage.getByIndex(index);
+    const [day, month, year] = date.split('/');
+    Modal.open();
+    Modal.elements.form.setAttribute('data-update', index);
+    Modal.elements.description.value = description;
+    Modal.elements.amount.value = (amount / 100).toFixed(2);
+    Modal.elements.date.value = `${year}-${month}-${day}`;
   },
   income() {
     let income = 0;
@@ -70,13 +93,14 @@ const DOM = {
     DOM.transactionsContainer.appendChild(tr)
   },
   innerHTMLTransaction(transaction, index) {
-    const CSSclass = transaction.amount > 0 ? "income" : "expense"
+    const CSSclass = transaction.amount > 0 ? 'income' : 'expense'
     const amount = Utils.formatCurrency(transaction.amount)
     const html = `
             <td class="description">${transaction.description}</td>
             <td class="${CSSclass}">${amount}</td>
             <td class="date">${transaction.date}</td>
             <td><img onclick="Transaction.remove(${index})" src="./assets/minus.svg" alt="Remover essa transação"></td>
+            <td><img onclick="Transaction.update(${index})" src="./assets/edit.svg" alt="Editar essa transação"></td>
         `
     return html
   },
@@ -92,7 +116,7 @@ const DOM = {
     )
   },
   clearTransactions() {
-    DOM.transactionsContainer.innerHTML = "";
+    DOM.transactionsContainer.innerHTML = '';
   }
 };
 
@@ -110,14 +134,14 @@ const Utils = {
   },
 
   formatCurrency(value) {
-    const signal = Number(value) < 0 ? "-" : ""
+    const signal = Number(value) < 0 ? '-' : ''
 
-    value = String(value).replace(/\D/g, "")
+    value = String(value).replace(/\D/g, '')
     value = Number(value) / 100
 
-    value = value.toLocaleString("pt-BR", {
-      style: "currency",
-      currency: "BRL"
+    value = value.toLocaleString('pt-BR', {
+      style: 'currency',
+      currency: 'BRL'
     })
 
     return signal + value
@@ -144,7 +168,7 @@ const Form = {
       amount.trim() === "" ||
       date.trim() === ""
     ){
-      throw new Error("Por favor, preencha todos os campos")
+      throw new Error('Por favor, preencha todos os campos')
     }
   },
 
@@ -163,9 +187,17 @@ const Form = {
   sumit(event) {
     event.preventDefault();
     try {
+      const form = event.target;
+      const indexToUpdate = form.dataset.update;
+
       Form.validateFields();
       const transaction = Form.formatValues();
-      Transaction.add(transaction);
+      if (indexToUpdate !== '' && indexToUpdate !== undefined) {
+        Transaction.addByIndex(transaction, indexToUpdate);
+        form.removeAttribute('data-update');
+      } else {
+        Transaction.add(transaction);
+      }
       Form.clearFields();
       Modal.close();
     } catch (error) {
@@ -190,6 +222,7 @@ function DarkMode() {
 
 const App = {
   init(){
+    DarkMode()
     Transaction.all.forEach(DOM.addTransaction)
     DOM.updateBalance()
     Storage.set(Transaction.all)
@@ -200,5 +233,5 @@ const App = {
     App.init()
   },
 };
-DarkMode()
+
 App.init()
