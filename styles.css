@@ -64,7 +64,7 @@
   60%,
   100% {
     stroke-width: 0.3;
-    fill: var(--green);
+    fill: var(--card-color);
   }
 }
 @keyframes to-left {
@@ -255,7 +255,7 @@ header {
 }
 .card:hover {
   transform: scale(1.1);
-  box-shadow: 0 4px 2px var(--gray);
+  box-shadow: 0 4px 2px var(--help-text);
 }
 
 .card img:hover {
@@ -342,6 +342,7 @@ table tbody tr:hover {
 table td {
   background: var(--primary-color);
   padding: 1rem 2rem;
+  z-index: 99;
 }
 
 td.description {

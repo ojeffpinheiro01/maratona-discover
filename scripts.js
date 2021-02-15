@@ -228,13 +228,13 @@ function DarkMode() {
   darkSelect.addEventListener('change', onChangeDark)
 }
 
-function LoadingAppAnimation(){
-  const timeline = new TimelineMax({delay:1, onComplete:nextAnimation});
+function LoadingApp(){
+  const timeline = new TimelineMax();
   timeline
     .fromTo(
         '.bg-loader', 1 ,
         { width:'100%' }, 
-        { width:'0%',delay: 5,ease:Expo.easeInOut } 
+        { width:'0%',delay: 5,ease: Power0.easeNone } 
     )
     .fromTo(
         'header', 2 ,
@@ -259,6 +259,7 @@ function LoadingAppAnimation(){
 const App = {
   init(){
     DarkMode()
+    LoadingApp()
     Transaction.all.forEach(DOM.addTransaction)
     DOM.updateBalance()
     Storage.set(Transaction.all)
